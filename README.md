@@ -15,4 +15,12 @@ Below are the list of the files in this repository:
 - CodeBook.md - The code book that describes the variables, the data, and transformations performed.
  
 ### Steps to generate the tidy data set
-
+1. Download the source data zip file and save it to PC.
+2. Unzip the source data file.  The following sub-directories and files would be created:
+  .\UCI HAR Dataset\
+  .\UCI HAR Dataset\  
+  .\UCI HAR Dataset\test\X_test.txt
+  .\UCI HAR Dataset\test\y_test.txt
+3. Start R-console and set the working directory to the directory "UCI HAR Dataset" in 2), using the command setwd ("...").
+4. Execute the run_analysis.R in this repo.
+5. 
