@@ -11,77 +11,77 @@ read_files <- function (set_of_data) {
   labels <- read.csv (file_label, header=FALSE)
   merged_data <- 
     cbind (subjects, labels, 
-           substr (variables_all$V1, 1, 16), # 1 tBodyAcc-mean()-X
-           substr (variables_all$V1, 17, 32), # 2 tBodyAcc-mean()-Y
-           substr (variables_all$V1, 33, 48), # 3 tBodyAcc-mean()-Z
-           substr (variables_all$V1, 49, 64), # 4 tBodyAcc-std()-X
-           substr (variables_all$V1, 65, 80), # 5 tBodyAcc-std()-Y
-           substr (variables_all$V1, 81, 96), # 6 tBodyAcc-std()-Z
-           substr (variables_all$V1, 641, 656), # 41 tGravityAcc-mean()-X
-           substr (variables_all$V1, 657, 672), # 42 tGravityAcc-mean()-Y
-           substr (variables_all$V1, 673, 688), # 43 tGravityAcc-mean()-Z
-           substr (variables_all$V1, 689, 704), # 44 tGravityAcc-std()-X
-           substr (variables_all$V1, 705, 720), # 45 tGravityAcc-std()-Y
-           substr (variables_all$V1, 721, 736), # 46 tGravityAcc-std()-Z
-           substr (variables_all$V1, 1281, 1296), # 81 tBodyAccJerk-mean()-X
-           substr (variables_all$V1, 1297, 1312), # 82 tBodyAccJerk-mean()-Y
-           substr (variables_all$V1, 1313, 1328), # 83 tBodyAccJerk-mean()-Z
-           substr (variables_all$V1, 1329, 1344), # 84 tBodyAccJerk-std()-X
-           substr (variables_all$V1, 1345, 1360), # 85 tBodyAccJerk-std()-Y
-           substr (variables_all$V1, 1361, 1376), # 86 tBodyAccJerk-std()-Z
-           substr (variables_all$V1, 1921, 1936), # 121 tBodyGyro-mean()-X
-           substr (variables_all$V1, 1937, 1952), # 122 tBodyGyro-mean()-Y
-           substr (variables_all$V1, 1953, 1968), # 123 tBodyGyro-mean()-Z
-           substr (variables_all$V1, 1969, 1984), # 124 tBodyGyro-std()-X
-           substr (variables_all$V1, 1985, 2000), # 125 tBodyGyro-std()-Y
-           substr (variables_all$V1, 2001, 2016), # 126 tBodyGyro-std()-Z
-           substr (variables_all$V1, 2561, 2576), # 161 tBodyGyroJerk-mean()-X
-           substr (variables_all$V1, 2577, 2592), # 162 tBodyGyroJerk-mean()-Y
-           substr (variables_all$V1, 2593, 2608), # 163 tBodyGyroJerk-mean()-Z
-           substr (variables_all$V1, 2609, 2624), # 164 tBodyGyroJerk-std()-X
-           substr (variables_all$V1, 2625, 2640), # 165 tBodyGyroJerk-std()-Y
-           substr (variables_all$V1, 2641, 2656), # 166 tBodyGyroJerk-std()-Z
-           substr (variables_all$V1, 3201, 3216), # 201 tBodyAccMag-mean()
-           substr (variables_all$V1, 3217, 3232), # 202 tBodyAccMag-std()
-           substr (variables_all$V1, 3409, 3424), # 214 tGravityAccMag-mean()
-           substr (variables_all$V1, 3425, 3440), # 215 tGravityAccMag-std()
-           substr (variables_all$V1, 3617, 3632), # 227 tBodyAccJerkMag-mean()
-           substr (variables_all$V1, 3633, 3648), # 228 tBodyAccJerkMag-std()
-           substr (variables_all$V1, 3825, 3840), # 240 tBodyGyroMag-mean()
-           substr (variables_all$V1, 3841, 3856), # 241 tBodyGyroMag-std()
-           substr (variables_all$V1, 4033, 4048), # 253 tBodyGyroJerkMag-mean()
-           substr (variables_all$V1, 4049, 4064), # 254 tBodyGyroJerkMag-std()
-           substr (variables_all$V1, 4241, 4256), # 266 fBodyAcc-mean()-X
-           substr (variables_all$V1, 4257, 4272), # 267 fBodyAcc-mean()-Y
-           substr (variables_all$V1, 4273, 4288), # 268 fBodyAcc-mean()-Z
-           substr (variables_all$V1, 4289, 4304), # 269 fBodyAcc-std()-X
-           substr (variables_all$V1, 4305, 4320), # 270 fBodyAcc-std()-Y
-           substr (variables_all$V1, 4321, 4336), # 271 fBodyAcc-std()-Z
-           substr (variables_all$V1, 5505, 5520), # 345 fBodyAccJerk-mean()-X
-           substr (variables_all$V1, 5521, 5536), # 346 fBodyAccJerk-mean()-Y
-           substr (variables_all$V1, 5537, 5552), # 347 fBodyAccJerk-mean()-Z
-           substr (variables_all$V1, 5553, 5568), # 348 fBodyAccJerk-std()-X
-           substr (variables_all$V1, 5569, 5584), # 349 fBodyAccJerk-std()-Y
-           substr (variables_all$V1, 5585, 5600), # 350 fBodyAccJerk-std()-Z
-           substr (variables_all$V1, 6769, 6784), # 424 fBodyGyro-mean()-X
-           substr (variables_all$V1, 6785, 6800), # 425 fBodyGyro-mean()-Y
-           substr (variables_all$V1, 6801, 6816), # 426 fBodyGyro-mean()-Z
-           substr (variables_all$V1, 6817, 6832), # 427 fBodyGyro-std()-X
-           substr (variables_all$V1, 6833, 6848), # 428 fBodyGyro-std()-Y
-           substr (variables_all$V1, 6849, 6864), # 429 fBodyGyro-std()-Z
-           substr (variables_all$V1, 8033, 8048), # 503 fBodyAccMag-mean()
-           substr (variables_all$V1, 8049, 8064), # 504 fBodyAccMag-std()
-           substr (variables_all$V1, 8241, 8256), # 516 fBodyBodyAccJerkMag-mean()
-           substr (variables_all$V1, 8257, 8272), # 517 fBodyBodyAccJerkMag-std()
-           substr (variables_all$V1, 8449, 8464), # 529 fBodyBodyGyroMag-mean()
-           substr (variables_all$V1, 8465, 8480), # 530 fBodyBodyGyroMag-std()
-           substr (variables_all$V1, 8657, 8672), # 542 fBodyBodyGyroJerkMag-mean()
-           substr (variables_all$V1, 8673, 8688) # 543 fBodyBodyGyroJerkMag-std()
+           as.numeric (substr (variables_all$V1, 1, 16)), # 1 tBodyAcc-mean()-X
+           as.numeric (substr (variables_all$V1, 17, 32)), # 2 tBodyAcc-mean()-Y
+           as.numeric (substr (variables_all$V1, 33, 48)), # 3 tBodyAcc-mean()-Z
+           as.numeric (substr (variables_all$V1, 49, 64)), # 4 tBodyAcc-std()-X
+           as.numeric (substr (variables_all$V1, 65, 80)), # 5 tBodyAcc-std()-Y
+           as.numeric (substr (variables_all$V1, 81, 96)), # 6 tBodyAcc-std()-Z
+           as.numeric (substr (variables_all$V1, 641, 656)), # 41 tGravityAcc-mean()-X
+           as.numeric (substr (variables_all$V1, 657, 672)), # 42 tGravityAcc-mean()-Y
+           as.numeric (substr (variables_all$V1, 673, 688)), # 43 tGravityAcc-mean()-Z
+           as.numeric (substr (variables_all$V1, 689, 704)), # 44 tGravityAcc-std()-X
+           as.numeric (substr (variables_all$V1, 705, 720)), # 45 tGravityAcc-std()-Y
+           as.numeric (substr (variables_all$V1, 721, 736)), # 46 tGravityAcc-std()-Z
+           as.numeric (substr (variables_all$V1, 1281, 1296)), # 81 tBodyAccJerk-mean()-X
+           as.numeric (substr (variables_all$V1, 1297, 1312)), # 82 tBodyAccJerk-mean()-Y
+           as.numeric (substr (variables_all$V1, 1313, 1328)), # 83 tBodyAccJerk-mean()-Z
+           as.numeric (substr (variables_all$V1, 1329, 1344)), # 84 tBodyAccJerk-std()-X
+           as.numeric (substr (variables_all$V1, 1345, 1360)), # 85 tBodyAccJerk-std()-Y
+           as.numeric (substr (variables_all$V1, 1361, 1376)), # 86 tBodyAccJerk-std()-Z
+           as.numeric (substr (variables_all$V1, 1921, 1936)), # 121 tBodyGyro-mean()-X
+           as.numeric (substr (variables_all$V1, 1937, 1952)), # 122 tBodyGyro-mean()-Y
+           as.numeric (substr (variables_all$V1, 1953, 1968)), # 123 tBodyGyro-mean()-Z
+           as.numeric (substr (variables_all$V1, 1969, 1984)), # 124 tBodyGyro-std()-X
+           as.numeric (substr (variables_all$V1, 1985, 2000)), # 125 tBodyGyro-std()-Y
+           as.numeric (substr (variables_all$V1, 2001, 2016)), # 126 tBodyGyro-std()-Z
+           as.numeric (substr (variables_all$V1, 2561, 2576)), # 161 tBodyGyroJerk-mean()-X
+           as.numeric (substr (variables_all$V1, 2577, 2592)), # 162 tBodyGyroJerk-mean()-Y
+           as.numeric (substr (variables_all$V1, 2593, 2608)), # 163 tBodyGyroJerk-mean()-Z
+           as.numeric (substr (variables_all$V1, 2609, 2624)), # 164 tBodyGyroJerk-std()-X
+           as.numeric (substr (variables_all$V1, 2625, 2640)), # 165 tBodyGyroJerk-std()-Y
+           as.numeric (substr (variables_all$V1, 2641, 2656)), # 166 tBodyGyroJerk-std()-Z
+           as.numeric (substr (variables_all$V1, 3201, 3216)), # 201 tBodyAccMag-mean()
+           as.numeric (substr (variables_all$V1, 3217, 3232)), # 202 tBodyAccMag-std()
+           as.numeric (substr (variables_all$V1, 3409, 3424)), # 214 tGravityAccMag-mean()
+           as.numeric (substr (variables_all$V1, 3425, 3440)), # 215 tGravityAccMag-std()
+           as.numeric (substr (variables_all$V1, 3617, 3632)), # 227 tBodyAccJerkMag-mean()
+           as.numeric (substr (variables_all$V1, 3633, 3648)), # 228 tBodyAccJerkMag-std()
+           as.numeric (substr (variables_all$V1, 3825, 3840)), # 240 tBodyGyroMag-mean()
+           as.numeric (substr (variables_all$V1, 3841, 3856)), # 241 tBodyGyroMag-std()
+           as.numeric (substr (variables_all$V1, 4033, 4048)), # 253 tBodyGyroJerkMag-mean()
+           as.numeric (substr (variables_all$V1, 4049, 4064)), # 254 tBodyGyroJerkMag-std()
+           as.numeric (substr (variables_all$V1, 4241, 4256)), # 266 fBodyAcc-mean()-X
+           as.numeric (substr (variables_all$V1, 4257, 4272)), # 267 fBodyAcc-mean()-Y
+           as.numeric (substr (variables_all$V1, 4273, 4288)), # 268 fBodyAcc-mean()-Z
+           as.numeric (substr (variables_all$V1, 4289, 4304)), # 269 fBodyAcc-std()-X
+           as.numeric (substr (variables_all$V1, 4305, 4320)), # 270 fBodyAcc-std()-Y
+           as.numeric (substr (variables_all$V1, 4321, 4336)), # 271 fBodyAcc-std()-Z
+           as.numeric (substr (variables_all$V1, 5505, 5520)), # 345 fBodyAccJerk-mean()-X
+           as.numeric (substr (variables_all$V1, 5521, 5536)), # 346 fBodyAccJerk-mean()-Y
+           as.numeric (substr (variables_all$V1, 5537, 5552)), # 347 fBodyAccJerk-mean()-Z
+           as.numeric (substr (variables_all$V1, 5553, 5568)), # 348 fBodyAccJerk-std()-X
+           as.numeric (substr (variables_all$V1, 5569, 5584)), # 349 fBodyAccJerk-std()-Y
+           as.numeric (substr (variables_all$V1, 5585, 5600)), # 350 fBodyAccJerk-std()-Z
+           as.numeric (substr (variables_all$V1, 6769, 6784)), # 424 fBodyGyro-mean()-X
+           as.numeric (substr (variables_all$V1, 6785, 6800)), # 425 fBodyGyro-mean()-Y
+           as.numeric (substr (variables_all$V1, 6801, 6816)), # 426 fBodyGyro-mean()-Z
+           as.numeric (substr (variables_all$V1, 6817, 6832)), # 427 fBodyGyro-std()-X
+           as.numeric (substr (variables_all$V1, 6833, 6848)), # 428 fBodyGyro-std()-Y
+           as.numeric (substr (variables_all$V1, 6849, 6864)), # 429 fBodyGyro-std()-Z
+           as.numeric (substr (variables_all$V1, 8033, 8048)), # 503 fBodyAccMag-mean()
+           as.numeric (substr (variables_all$V1, 8049, 8064)), # 504 fBodyAccMag-std()
+           as.numeric (substr (variables_all$V1, 8241, 8256)), # 516 fBodyBodyAccJerkMag-mean()
+           as.numeric (substr (variables_all$V1, 8257, 8272)), # 517 fBodyBodyAccJerkMag-std()
+           as.numeric (substr (variables_all$V1, 8449, 8464)), # 529 fBodyBodyGyroMag-mean()
+           as.numeric (substr (variables_all$V1, 8465, 8480)), # 530 fBodyBodyGyroMag-std()
+           as.numeric (substr (variables_all$V1, 8657, 8672)), # 542 fBodyBodyGyroJerkMag-mean()
+           as.numeric (substr (variables_all$V1, 8673, 8688)) # 543 fBodyBodyGyroJerkMag-std()
     )
   colnames (merged_data) <- 
     c ('subject', 'activity_code',
-       'tBodyAcc-mean()-X',
-       'tBodyAcc-mean()-Y',
+       'tBodyAccMeanX',
+       'tBodyAccMeanY',
        'tBodyAcc-mean()-Z',
        'tBodyAcc-std()-X',
        'tBodyAcc-std()-Y',
