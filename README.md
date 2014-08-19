@@ -9,13 +9,16 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 ### Files
 Below are the list of the files in this repository:
 - README.md
---  This file to describe the steps to generate the tidy data set.
+
+  This file to describe the steps to generate the tidy data set.
 
 - run_anlaysis.R
 
   The script to do the actual process to generate the tidy data set.
 
-- README.md
+- CodeBook.md
+
+  The code book that describes the variables, the data, and transformations performed.
  
 ### Steps to generate the tidy data set
 
