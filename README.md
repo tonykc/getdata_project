@@ -25,6 +25,6 @@ Below are the list of the files in this repository:
   - .\UCI HAR Dataset\train\subject_test.txt
   - .\UCI HAR Dataset\train\X_test.txt
   - .\UCI HAR Dataset\train\y_test.txt
-3. Start R-console and set the working directory to the directory "UCI HAR Dataset" in 2), using the command setwd ("...").
-4. Execute the run_analysis.R in this repo.
-5. 
+3. Start R-console and set the working directory to the directory "UCI HAR Dataset" in 2).  (By setwd (...) command)
+4. Execute the run_analysis.R in this repo. You may copy and paste it into R-console for execution.
+5. After the execution, a txt file "result.txt" would be created in the working directory.
