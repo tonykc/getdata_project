@@ -6,6 +6,7 @@ The goal is to prepare a tidy data set for later analysis.  The source data were
 Here are the data for the project: 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
+
 ### Files
 Below are the list of the files in this repository:
 - README.md - This file to describe the steps to generate the tidy data set.
@@ -28,3 +29,20 @@ Below are the list of the files in this repository:
 3. Start R-console and set the working directory to the directory "UCI HAR Dataset" in 2).  (By setwd (...) command)
 4. Execute the run_analysis.R in this repo. You may copy and paste it into R-console for execution.
 5. After the execution, a txt file "result.txt" would be created in the working directory.
+
+### Notes on run_analysis.R 
+The requirements on run_analysis.R for preparing the target tidy data set include the following:  
+ (1) Merges the training and the test sets to create one data set.
+ (2) Extracts only the measurements on the mean and standard deviation for each measurement. 
+ (3) Uses descriptive activity names to name the activities in the data set
+ (4) Appropriately labels the data set with descriptive variable names. 
+ (5) Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+
+In order to satisfy (2), we need to determine which variables listed in features.txt have to be included.  The file features_info.txt was studied.  The following statements were found in it:
+
+... The set of variables that were estimated from these signals are:
+mean(): Mean value
+std(): Standard deviation
+...
+
+Based on this, it was decided that only those "features/variables" which looked like "...mean()..." or "...std()..." would be included.
