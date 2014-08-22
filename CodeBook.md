@@ -2,15 +2,16 @@ The variables in the tidy data set "result.txt" are separated by space.
 
 The list of variables are described below:
 
-Field|Type|Description|Data Source
------|----|-----------|-----------
-subject|Numeric|Identifier for subject who performed the activity for each window sample.  Range from 1 to 30.|subject\_test.txt & subject\_train.txt.|
-activity|Character|The activity performed by the subject: WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, SITTING, STANDING, LAYING.|Data sourced from y\_test.txt and y\_train.txt with descriptions mapped from activity_labels.txt|
-tBodyAcc\_x\_mean|Numeric|The average on tBodyAcc-mean()-X for the subject and activity.  tBodyAcc-mean()-X stands for mean value of Body Acceleration in X direction.  The prefix 't' indicates time domain signals.|X\_test.txt & X\_train.txt.|
-tBodyAcc\_y\_mean|Numeric|The average on tBodyAcc-mean()-Y for the subject and activity.  tBodyAcc-mean()-Y stands for mean value of Body Acceleration in Y direction.  |X\_test.txt and X\_train.txt.|
-tBodyAcc\_z\_mean|Numeric|The average on tBodyAcc-mean()-Z for the subject and activity.  tBodyAcc-mean()-Z stands for mean value of Body Acceleration in Z direction.  |X\_test.txt and X\_train.txt.|
-tBodyAcc\_x\_std|Numeric|The average on tBodyAcc-std()-X for the subject and activity.  tBodyAcc-std()-X stands for standard deviation of Body Acceleration in X direction.|X\_test.txt & X\_train.txt.|
-tBodyAcc\_y\_std|Numeric|The average on tBodyAcc-std()-Y for the subject and activity.  tBodyAcc-std()-Y stands for standard deviation of Body Acceleration in Y direction.|X\_test.txt & X\_train.txt.|
+Seq|Field|Type|Description|Data Source
+---|-----|----|-----------|-----------
+1|subject|Numeric|Identifier for subject who performed the activity for each window sample.  Range from 1 to 30.|subject\_test.txt & subject\_train.txt.|
+2|activity|Character|The activity performed by the subject: WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, SITTING, STANDING, LAYING.|Data sourced from y\_test.txt and y\_train.txt with descriptions mapped from activity_labels.txt|
+3|tBodyAcc\_x\_mean|Numeric|The average on tBodyAcc-mean()-X for the subject and activity.  tBodyAcc-mean()-X stands for mean value of Body Acceleration in X direction.  The prefix 't' indicates time domain signals.|X\_test.txt & X\_train.txt.|
+4|tBodyAcc\_y\_mean|Numeric|The average on tBodyAcc-mean()-Y for the subject and activity.  
+tBodyAcc-mean()-Y stands for mean value of Body Acceleration in Y direction.  |X\_test.txt and X\_train.txt.|
+5|tBodyAcc\_z\_mean|Numeric|The average on tBodyAcc-mean()-Z for the subject and activity.  tBodyAcc-mean()-Z stands for mean value of Body Acceleration in Z direction.  |X\_test.txt and X\_train.txt.|
+6|tBodyAcc\_x\_std|Numeric|The average on tBodyAcc-std()-X for the subject and activity.  tBodyAcc-std()-X stands for standard deviation of Body Acceleration in X direction.|X\_test.txt & X\_train.txt.|
+7|tBodyAcc\_y\_std|Numeric|The average on tBodyAcc-std()-Y for the subject and activity.  tBodyAcc-std()-Y stands for standard deviation of Body Acceleration in Y direction.|X\_test.txt & X\_train.txt.|
 tBodyAcc\_z\_std|Numeric|The average on tBodyAcc-std()-Z for the subject and activity.  tBodyAcc-std()-Z stands for standard deviation of Body Acceleration in Z direction.|X\_test.txt & X\_train.txt.|
 tGravityAcc\_x\_mean|Numeric|The average on tGravityAcc-mean()-X for the subject and activity.  tGravityAcc-mean()-X stands for mean value of Gravity Acceleration in X direction.  |X\_test.txt and X\_train.txt.|
 tGravityAcc\_y\_mean|Numeric|The average on tGravityAcc-mean()-Y for the subject and activity.  tGravityAcc-mean()-Y stands for mean value of Gravity Acceleration in Y direction.  |X\_test.txt and X\_train.txt.|
@@ -43,7 +44,9 @@ tGravityAccMag\_std|Numeric||
 tBodyAccJerkMag\_mean|Numeric||
 tBodyAccJerkMag\_std|Numeric||
 tBodyGyroMag\_mean|Numeric||
+tBodyGyroMag\_std|Numeric||
 tBodyGyroJerkMag\_mean|Numeric||
+tBodyGyroJerkMag\_std|Numeric||
 fBodyAcc\_x\_mean|Numeric||
 fBodyAcc\_y\_mean|Numeric||
 fBodyAcc\_z\_mean|Numeric||
@@ -57,8 +60,6 @@ fBodyAccMag\_mean|Numeric||
 fBodyBodyAccJerkMag\_mean|Numeric||
 fBodyBodyGyroMag\_mean|Numeric||
 fBodyBodyGyroJerkMag\_mean|Numeric||
-tBodyGyroMag\_std|Numeric||
-tBodyGyroJerkMag\_std|Numeric||
 fBodyAcc\_x\_std|Numeric||
 fBodyAcc\_y\_std|Numeric||
 fBodyAcc\_z\_std|Numeric||
