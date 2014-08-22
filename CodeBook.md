@@ -36,8 +36,8 @@ Seq|Field|Type|Description|Data Source
 30|tBodyGyroJerk\_x\_std|Numeric|The average on tBodyGyroJerk-std()-X for the subject and activity.  tBodyGyroJerk-std()-X stands for standard deviation of Body Angular Velocity Jerk in X direction.  |X\_test.txt & X\_train.txt.|
 31|tBodyGyroJerk\_y\_std|Numeric|The average on tBodyGyroJerk-std()-Y for the subject and activity.  tBodyGyroJerk-std()-Y stands for standard deviation of Body Angular Velocity Jerk in Y direction.  |X\_test.txt & X\_train.txt.|
 32|tBodyGyroJerk\_z\_std|Numeric|The average on tBodyGyroJerk-std()-Z for the subject and activity.  tBodyGyroJerk-std()-Z stands for standard deviation of Body Angular Velocity Jerk in Z direction.  |X\_test.txt & X\_train.txt.|
-33|tBodyAccMag\_mean|Numeric||
-34|tBodyAccMag\_std|Numeric||
+33|tBodyAccMag\_mean|Numeric|The average on tBodyAccMag-mean() for the subject and activity.  tBodyAccMag-mean() stands for mean value of magnitude of jerk signals derived from body acceleration.  |X\_test.txt & X\_train.txt.|
+34|tBodyAccMag\_std|Numeric|The average on tBodyAccMag-std()-x for the subject and activity.  tBodyAccMag-std()-x stands for standard deviation of magnitude of jerk signals derived from body acceleration.  |X\_test.txt & X\_train.txt.|
 35|tGravityAccMag\_mean|Numeric||
 36|tGravityAccMag\_std|Numeric||
 37|tBodyAccJerkMag\_mean|Numeric||
