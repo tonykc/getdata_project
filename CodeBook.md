@@ -7,69 +7,68 @@ Seq|Field|Type|Description|Data Source
 1|subject|Numeric|Identifier for subject who performed the activity for each window sample.  Range from 1 to 30.|subject\_test.txt & subject\_train.txt.|
 2|activity|Character|The activity performed by the subject: WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, SITTING, STANDING, LAYING.|Data sourced from y\_test.txt and y\_train.txt with descriptions mapped from activity_labels.txt|
 3|tBodyAcc\_x\_mean|Numeric|The average on tBodyAcc-mean()-X for the subject and activity.  tBodyAcc-mean()-X stands for mean value of Body Acceleration in X direction.  The prefix 't' indicates time domain signals.|X\_test.txt & X\_train.txt.|
-4|tBodyAcc\_y\_mean|Numeric|The average on tBodyAcc-mean()-Y for the subject and activity.  
-tBodyAcc-mean()-Y stands for mean value of Body Acceleration in Y direction.  |X\_test.txt and X\_train.txt.|
+4|tBodyAcc\_y\_mean|Numeric|The average on tBodyAcc-mean()-Y for the subject and activity.  tBodyAcc-mean()-Y stands for mean value of Body Acceleration in Y direction.  |X\_test.txt and X\_train.txt.|
 5|tBodyAcc\_z\_mean|Numeric|The average on tBodyAcc-mean()-Z for the subject and activity.  tBodyAcc-mean()-Z stands for mean value of Body Acceleration in Z direction.  |X\_test.txt and X\_train.txt.|
 6|tBodyAcc\_x\_std|Numeric|The average on tBodyAcc-std()-X for the subject and activity.  tBodyAcc-std()-X stands for standard deviation of Body Acceleration in X direction.|X\_test.txt & X\_train.txt.|
 7|tBodyAcc\_y\_std|Numeric|The average on tBodyAcc-std()-Y for the subject and activity.  tBodyAcc-std()-Y stands for standard deviation of Body Acceleration in Y direction.|X\_test.txt & X\_train.txt.|
-tBodyAcc\_z\_std|Numeric|The average on tBodyAcc-std()-Z for the subject and activity.  tBodyAcc-std()-Z stands for standard deviation of Body Acceleration in Z direction.|X\_test.txt & X\_train.txt.|
-tGravityAcc\_x\_mean|Numeric|The average on tGravityAcc-mean()-X for the subject and activity.  tGravityAcc-mean()-X stands for mean value of Gravity Acceleration in X direction.  |X\_test.txt and X\_train.txt.|
-tGravityAcc\_y\_mean|Numeric|The average on tGravityAcc-mean()-Y for the subject and activity.  tGravityAcc-mean()-Y stands for mean value of Gravity Acceleration in Y direction.  |X\_test.txt and X\_train.txt.|
-tGravityAcc\_z\_mean|Numeric|The average on tGravityAcc-mean()-Z for the subject and activity.  tGravityAcc-mean()-Z stands for mean value of Gravity Acceleration in Z direction.  |X\_test.txt and X\_train.txt.|
-tGravityAcc\_x\_std|Numeric|The average on tGravityAcc-std()-X for the subject and activity.  tGravityAcc-std()-X stands for standard deviation of Gravity Acceleration in X direction.  |X\_test.txt and X\_train.txt.|
-tGravityAcc\_y\_std|Numeric|The average on tGravityAcc-std()-Y for the subject and activity.  tGravityAcc-std()-Y stands for standard deviation of Gravity Acceleration in X direction.  |X\_test.txt and X\_train.txt.|
-tGravityAcc\_z\_std|Numeric|The average on tGravityAcc-std()-Z for the subject and activity.  tGravityAcc-std()-Z stands for standard deviation of Gravity Acceleration in X direction.  |X\_test.txt and X\_train.txt.|
-tBodyAccJerk\_x\_mean|Numeric|The average on tBodyAccJerk-mean()-X for the subject and activity.  tBodyAccJerk-mean()-X stands for mean value of Body Acceleration Jerk in X direction.  |X\_test.txt and X\_train.txt.|
-tBodyAccJerk\_y\_mean|Numeric|The average on tBodyAccJerk-mean()-Y for the subject and activity.  tBodyAccJerk-mean()-Y stands for mean value of Body Acceleration Jerk in Y direction.  |X\_test.txt and X\_train.txt.|
-tBodyAccJerk\_z\_mean|Numeric|The average on tBodyAccJerk-mean()-Z for the subject and activity.  tBodyAccJerk-mean()-Z stands for mean value of Body Acceleration Jerk in Z direction.  |X\_test.txt and X\_train.txt.|
-tBodyAccJerk\_x\_std|Numeric||
-tBodyAccJerk\_y\_std|Numeric||
-tBodyAccJerk\_z\_std|Numeric||
-tBodyGyro\_x\_mean|Numeric||
-tBodyGyro\_y\_mean|Numeric||
-tBodyGyro\_z\_mean|Numeric||
-tBodyGyro\_x\_std|Numeric||
-tBodyGyro\_y\_std|Numeric||
-tBodyGyro\_z\_std|Numeric||
-tBodyGyroJerk\_x\_mean|Numeric||
-tBodyGyroJerk\_y\_mean|Numeric||
-tBodyGyroJerk\_z\_mean|Numeric||
-tBodyGyroJerk\_x\_std|Numeric||
-tBodyGyroJerk\_y\_std|Numeric||
-tBodyGyroJerk\_z\_std|Numeric||
-tBodyAccMag\_mean|Numeric||
-tBodyAccMag\_std|Numeric||
-tGravityAccMag\_mean|Numeric||
-tGravityAccMag\_std|Numeric||
-tBodyAccJerkMag\_mean|Numeric||
-tBodyAccJerkMag\_std|Numeric||
-tBodyGyroMag\_mean|Numeric||
-tBodyGyroMag\_std|Numeric||
-tBodyGyroJerkMag\_mean|Numeric||
-tBodyGyroJerkMag\_std|Numeric||
-fBodyAcc\_x\_mean|Numeric||
-fBodyAcc\_y\_mean|Numeric||
-fBodyAcc\_z\_mean|Numeric||
-fBodyAccJerk\_x\_mean|Numeric||
-fBodyAccJerk\_y\_mean|Numeric||
-fBodyAccJerk\_z\_mean|Numeric||
-fBodyGyro\_x\_mean|Numeric||
-fBodyGyro\_y\_mean|Numeric||
-fBodyGyro\_z\_mean|Numeric||
-fBodyAccMag\_mean|Numeric||
-fBodyBodyAccJerkMag\_mean|Numeric||
-fBodyBodyGyroMag\_mean|Numeric||
-fBodyBodyGyroJerkMag\_mean|Numeric||
-fBodyAcc\_x\_std|Numeric||
-fBodyAcc\_y\_std|Numeric||
-fBodyAcc\_z\_std|Numeric||
-fBodyAccJerk\_x\_std|Numeric||
-fBodyAccJerk\_y\_std|Numeric||
-fBodyAccJerk\_z\_std|Numeric||
-fBodyGyro\_x\_std|Numeric||
-fBodyGyro\_y\_std|Numeric||
-fBodyGyro\_z\_std|Numeric||
-fBodyAccMag\_std|Numeric||
-fBodyBodyAccJerkMag\_std|Numeric||
-fBodyBodyGyroMag\_std|Numeric||
-fBodyBodyGyroJerkMag\_std|Numeric||
+8|tBodyAcc\_z\_std|Numeric|The average on tBodyAcc-std()-Z for the subject and activity.  tBodyAcc-std()-Z stands for standard deviation of Body Acceleration in Z direction.|X\_test.txt & X\_train.txt.|
+9|tGravityAcc\_x\_mean|Numeric|The average on tGravityAcc-mean()-X for the subject and activity.  tGravityAcc-mean()-X stands for mean value of Gravity Acceleration in X direction.  |X\_test.txt and X\_train.txt.|
+10|tGravityAcc\_y\_mean|Numeric|The average on tGravityAcc-mean()-Y for the subject and activity.  tGravityAcc-mean()-Y stands for mean value of Gravity Acceleration in Y direction.  |X\_test.txt and X\_train.txt.|
+11|tGravityAcc\_z\_mean|Numeric|The average on tGravityAcc-mean()-Z for the subject and activity.  tGravityAcc-mean()-Z stands for mean value of Gravity Acceleration in Z direction.  |X\_test.txt and X\_train.txt.|
+12|tGravityAcc\_x\_std|Numeric|The average on tGravityAcc-std()-X for the subject and activity.  tGravityAcc-std()-X stands for standard deviation of Gravity Acceleration in X direction.  |X\_test.txt and X\_train.txt.|
+13|tGravityAcc\_y\_std|Numeric|The average on tGravityAcc-std()-Y for the subject and activity.  tGravityAcc-std()-Y stands for standard deviation of Gravity Acceleration in X direction.  |X\_test.txt and X\_train.txt.|
+14|tGravityAcc\_z\_std|Numeric|The average on tGravityAcc-std()-Z for the subject and activity.  tGravityAcc-std()-Z stands for standard deviation of Gravity Acceleration in X direction.  |X\_test.txt and X\_train.txt.|
+15|tBodyAccJerk\_x\_mean|Numeric|The average on tBodyAccJerk-mean()-X for the subject and activity.  tBodyAccJerk-mean()-X stands for mean value of Body Acceleration Jerk in X direction.  |X\_test.txt and X\_train.txt.|
+16|tBodyAccJerk\_y\_mean|Numeric|The average on tBodyAccJerk-mean()-Y for the subject and activity.  tBodyAccJerk-mean()-Y stands for mean value of Body Acceleration Jerk in Y direction.  |X\_test.txt and X\_train.txt.|
+17|tBodyAccJerk\_z\_mean|Numeric|The average on tBodyAccJerk-mean()-Z for the subject and activity.  tBodyAccJerk-mean()-Z stands for mean value of Body Acceleration Jerk in Z direction.  |X\_test.txt and X\_train.txt.|
+18|tBodyAccJerk\_x\_std|Numeric||
+19|tBodyAccJerk\_y\_std|Numeric||
+20|tBodyAccJerk\_z\_std|Numeric||
+21|tBodyGyro\_x\_mean|Numeric||
+22|tBodyGyro\_y\_mean|Numeric||
+23|tBodyGyro\_z\_mean|Numeric||
+24|tBodyGyro\_x\_std|Numeric||
+25|tBodyGyro\_y\_std|Numeric||
+26|tBodyGyro\_z\_std|Numeric||
+27|tBodyGyroJerk\_x\_mean|Numeric||
+28|tBodyGyroJerk\_y\_mean|Numeric||
+29|tBodyGyroJerk\_z\_mean|Numeric||
+30|tBodyGyroJerk\_x\_std|Numeric||
+31|tBodyGyroJerk\_y\_std|Numeric||
+32|tBodyGyroJerk\_z\_std|Numeric||
+33|tBodyAccMag\_mean|Numeric||
+34|tBodyAccMag\_std|Numeric||
+35|tGravityAccMag\_mean|Numeric||
+36|tGravityAccMag\_std|Numeric||
+37|tBodyAccJerkMag\_mean|Numeric||
+38|tBodyAccJerkMag\_std|Numeric||
+39|tBodyGyroMag\_mean|Numeric||
+40|tBodyGyroMag\_std|Numeric||
+41|tBodyGyroJerkMag\_mean|Numeric||
+42|tBodyGyroJerkMag\_std|Numeric||
+43|fBodyAcc\_x\_mean|Numeric||
+44|fBodyAcc\_y\_mean|Numeric||
+45|fBodyAcc\_z\_mean|Numeric||
+46|fBodyAccJerk\_x\_mean|Numeric||
+47|fBodyAccJerk\_y\_mean|Numeric||
+48|fBodyAccJerk\_z\_mean|Numeric||
+49|fBodyGyro\_x\_mean|Numeric||
+50|fBodyGyro\_y\_mean|Numeric||
+51|fBodyGyro\_z\_mean|Numeric||
+52|fBodyAccMag\_mean|Numeric||
+53|fBodyBodyAccJerkMag\_mean|Numeric||
+54|fBodyBodyGyroMag\_mean|Numeric||
+55|fBodyBodyGyroJerkMag\_mean|Numeric||
+56|fBodyAcc\_x\_std|Numeric||
+57|fBodyAcc\_y\_std|Numeric||
+58|fBodyAcc\_z\_std|Numeric||
+59|fBodyAccJerk\_x\_std|Numeric||
+60|fBodyAccJerk\_y\_std|Numeric||
+61|fBodyAccJerk\_z\_std|Numeric||
+62|fBodyGyro\_x\_std|Numeric||
+63|fBodyGyro\_y\_std|Numeric||
+64|fBodyGyro\_z\_std|Numeric||
+65|fBodyAccMag\_std|Numeric||
+66|fBodyBodyAccJerkMag\_std|Numeric||
+67|fBodyBodyGyroMag\_std|Numeric||
+68|fBodyBodyGyroJerkMag\_std|Numeric||
