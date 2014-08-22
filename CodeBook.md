@@ -9,21 +9,39 @@ activity|Character|The activity performed by the subject: WALKING, WALKING\_UPST
 tBodyAcc\_x\_mean|Numeric|The average on tBodyAcc-mean()-X for the subject and activity.  tBodyAcc-mean()-X stands for mean value of Body Acceleration in X direction.  The prefix 't' indicates time domain signals.|X\_test.txt & X\_train.txt.|
 tBodyAcc\_y\_mean|Numeric|The average on tBodyAcc-mean()-Y for the subject and activity.  tBodyAcc-mean()-Y stands for mean value of Body Acceleration in Y direction.  |X\_test.txt and X\_train.txt.|
 tBodyAcc\_z\_mean|Numeric|The average on tBodyAcc-mean()-Z for the subject and activity.  tBodyAcc-mean()-Z stands for mean value of Body Acceleration in Z direction.  |X\_test.txt and X\_train.txt.|
+tBodyAcc\_x\_std|Numeric|The average on tBodyAcc-std()-X for the subject and activity.  tBodyAcc-std()-X stands for standard deviation of Body Acceleration in X direction.|X\_test.txt & X\_train.txt.|
+tBodyAcc\_y\_std|Numeric|The average on tBodyAcc-std()-Y for the subject and activity.  tBodyAcc-std()-Y stands for standard deviation of Body Acceleration in Y direction.|X\_test.txt & X\_train.txt.|
+tBodyAcc\_z\_std|Numeric|The average on tBodyAcc-std()-Z for the subject and activity.  tBodyAcc-std()-Z stands for standard deviation of Body Acceleration in Z direction.|X\_test.txt & X\_train.txt.|
 tGravityAcc\_x\_mean|Numeric|The average on tGravityAcc-mean()-X for the subject and activity.  tGravityAcc-mean()-X stands for mean value of Gravity Acceleration in X direction.  |X\_test.txt and X\_train.txt.|
 tGravityAcc\_y\_mean|Numeric|The average on tGravityAcc-mean()-Y for the subject and activity.  tGravityAcc-mean()-Y stands for mean value of Gravity Acceleration in Y direction.  |X\_test.txt and X\_train.txt.|
 tGravityAcc\_z\_mean|Numeric|The average on tGravityAcc-mean()-Z for the subject and activity.  tGravityAcc-mean()-Z stands for mean value of Gravity Acceleration in Z direction.  |X\_test.txt and X\_train.txt.|
+tGravityAcc\_x\_std|Numeric|The average on tGravityAcc-std()-X for the subject and activity.  tGravityAcc-std()-X stands for standard deviation of Gravity Acceleration in X direction.  |X\_test.txt and X\_train.txt.|
+tGravityAcc\_y\_std|Numeric|The average on tGravityAcc-std()-Y for the subject and activity.  tGravityAcc-std()-Y stands for standard deviation of Gravity Acceleration in X direction.  |X\_test.txt and X\_train.txt.|
+tGravityAcc\_z\_std|Numeric|The average on tGravityAcc-std()-Z for the subject and activity.  tGravityAcc-std()-Z stands for standard deviation of Gravity Acceleration in X direction.  |X\_test.txt and X\_train.txt.|
 tBodyAccJerk\_x\_mean|Numeric|The average on tBodyAccJerk-mean()-X for the subject and activity.  tBodyAccJerk-mean()-X stands for mean value of Body Acceleration Jerk in X direction.  |X\_test.txt and X\_train.txt.|
 tBodyAccJerk\_y\_mean|Numeric|The average on tBodyAccJerk-mean()-Y for the subject and activity.  tBodyAccJerk-mean()-Y stands for mean value of Body Acceleration Jerk in Y direction.  |X\_test.txt and X\_train.txt.|
 tBodyAccJerk\_z\_mean|Numeric|The average on tBodyAccJerk-mean()-Z for the subject and activity.  tBodyAccJerk-mean()-Z stands for mean value of Body Acceleration Jerk in Z direction.  |X\_test.txt and X\_train.txt.|
+tBodyAccJerk\_x\_std|Numeric||
+tBodyAccJerk\_y\_std|Numeric||
+tBodyAccJerk\_z\_std|Numeric||
 tBodyGyro\_x\_mean|Numeric||
 tBodyGyro\_y\_mean|Numeric||
 tBodyGyro\_z\_mean|Numeric||
+tBodyGyro\_x\_std|Numeric||
+tBodyGyro\_y\_std|Numeric||
+tBodyGyro\_z\_std|Numeric||
 tBodyGyroJerk\_x\_mean|Numeric||
 tBodyGyroJerk\_y\_mean|Numeric||
 tBodyGyroJerk\_z\_mean|Numeric||
+tBodyGyroJerk\_x\_std|Numeric||
+tBodyGyroJerk\_y\_std|Numeric||
+tBodyGyroJerk\_z\_std|Numeric||
 tBodyAccMag\_mean|Numeric||
+tBodyAccMag\_std|Numeric||
 tGravityAccMag\_mean|Numeric||
+tGravityAccMag\_std|Numeric||
 tBodyAccJerkMag\_mean|Numeric||
+tBodyAccJerkMag\_std|Numeric||
 tBodyGyroMag\_mean|Numeric||
 tBodyGyroJerkMag\_mean|Numeric||
 fBodyAcc\_x\_mean|Numeric||
@@ -39,24 +57,6 @@ fBodyAccMag\_mean|Numeric||
 fBodyBodyAccJerkMag\_mean|Numeric||
 fBodyBodyGyroMag\_mean|Numeric||
 fBodyBodyGyroJerkMag\_mean|Numeric||
-tBodyAcc\_x\_std|Numeric|The average on tBodyAcc-std()-X for the subject and activity.  tBodyAcc-std()-X stands for standard deviation of Body Acceleration in X direction.|X\_test.txt & X\_train.txt.|
-tBodyAcc\_y\_std|Numeric|The average on tBodyAcc-std()-Y for the subject and activity.  tBodyAcc-std()-Y stands for standard deviation of Body Acceleration in Y direction.|X\_test.txt & X\_train.txt.|
-tBodyAcc\_z\_std|Numeric|The average on tBodyAcc-std()-Z for the subject and activity.  tBodyAcc-std()-Z stands for standard deviation of Body Acceleration in Z direction.|X\_test.txt & X\_train.txt.|
-tGravityAcc\_x\_std|Numeric||
-tGravityAcc\_y\_std|Numeric||
-tGravityAcc\_z\_std|Numeric||
-tBodyAccJerk\_x\_std|Numeric||
-tBodyAccJerk\_y\_std|Numeric||
-tBodyAccJerk\_z\_std|Numeric||
-tBodyGyro\_x\_std|Numeric||
-tBodyGyro\_y\_std|Numeric||
-tBodyGyro\_z\_std|Numeric||
-tBodyGyroJerk\_x\_std|Numeric||
-tBodyGyroJerk\_y\_std|Numeric||
-tBodyGyroJerk\_z\_std|Numeric||
-tBodyAccMag\_std|Numeric||
-tGravityAccMag\_std|Numeric||
-tBodyAccJerkMag\_std|Numeric||
 tBodyGyroMag\_std|Numeric||
 tBodyGyroJerkMag\_std|Numeric||
 fBodyAcc\_x\_std|Numeric||
