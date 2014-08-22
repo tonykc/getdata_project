@@ -38,9 +38,9 @@ Field|Type|Description
 -----|----|-----------
 subject|Numeric|Identifier for subject who performed the activity for each window sample.  Range from 1 to 30.  Data sourced from subject\_test.txt and subject\_train.txt.
 activity|Character|The activity performed: WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, SITTING, STANDING, LAYING.  Data sourced from y\_test.txt and y\_train.txt with descriptions mapped from activity_labels.txt
-tBodyAcc\_x\_mean|Numeric|The average on tBodyAcc-mean()-X for the subject and activity.  tBodyAcc-mean()-X stands for mean value of Body Acceleration in X-axis.  The prefix 't' indicates time domain data.  Data sourced from X\_test.txt and X\_train.txt. |
-tBodyAcc\_y\_mean|Numeric||
-tBodyAcc\_z\_mean|Numeric||
+tBodyAcc\_x\_mean|Numeric|The average on tBodyAcc-mean()-X for the subject and activity.  tBodyAcc-mean()-X stands for mean value of Body Acceleration in X direction.  The prefix 't' indicates time domain signals.  Data sourced from X\_test.txt and X\_train.txt.|
+tBodyAcc\_y\_mean|Numeric|The average on tBodyAcc-mean()-Y for the subject and activity.  tBodyAcc-mean()-Y stands for mean value of Body Acceleration in Y direction.  The prefix 't' indicates time domain signals.  Data sourced from X\_test.txt and X\_train.txt.|
+tBodyAcc\_z\_mean|Numeric|The average on tBodyAcc-mean()-Z for the subject and activity.  tBodyAcc-mean()-Z stands for mean value of Body Acceleration in Z direction.  The prefix 't' indicates time domain signals.  Data sourced from X\_test.txt and X\_train.txt.|
 tGravityAcc\_x\_mean|Numeric||
 tGravityAcc\_y\_mean|Numeric||
 tGravityAcc\_z\_mean|Numeric||
