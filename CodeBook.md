@@ -5,7 +5,7 @@ The list of variables are described below:
 Field|Type|Description|Data Source
 -----|----|-----------|-----------
 subject|Numeric|Identifier for subject who performed the activity for each window sample.  Range from 1 to 30.|subject\_test.txt & subject\_train.txt.|
-activity|Character|The activity performed by the subject: WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, SITTING, STANDING, LAYING.  Data sourced from y\_test.txt and y\_train.txt with descriptions mapped from activity_labels.txt
+activity|Character|The activity performed by the subject: WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, SITTING, STANDING, LAYING.|Data sourced from y\_test.txt and y\_train.txt with descriptions mapped from activity_labels.txt|
 tBodyAcc\_x\_mean|Numeric|The average on tBodyAcc-mean()-X for the subject and activity.  tBodyAcc-mean()-X stands for mean value of Body Acceleration in X direction.  The prefix 't' indicates time domain signals.|X\_test.txt & X\_train.txt.|
 tBodyAcc\_y\_mean|Numeric|The average on tBodyAcc-mean()-Y for the subject and activity.  tBodyAcc-mean()-Y stands for mean value of Body Acceleration in Y direction.  |X\_test.txt and X\_train.txt.|
 tBodyAcc\_z\_mean|Numeric|The average on tBodyAcc-mean()-Z for the subject and activity.  tBodyAcc-mean()-Z stands for mean value of Body Acceleration in Z direction.  |X\_test.txt and X\_train.txt.|
@@ -39,9 +39,9 @@ fBodyAccMag\_mean|Numeric||
 fBodyBodyAccJerkMag\_mean|Numeric||
 fBodyBodyGyroMag\_mean|Numeric||
 fBodyBodyGyroJerkMag\_mean|Numeric||
-tBodyAcc\_x\_std|Numeric||
-tBodyAcc\_y\_std|Numeric||
-tBodyAcc\_z\_std|Numeric||
+tBodyAcc\_x\_std|Numeric|The average on tBodyAcc-std()-X for the subject and activity.  tBodyAcc-std()-X stands for standard deviation of Body Acceleration in X direction.|X\_test.txt & X\_train.txt.|
+tBodyAcc\_y\_std|Numeric|The average on tBodyAcc-std()-Y for the subject and activity.  tBodyAcc-std()-Y stands for standard deviation of Body Acceleration in Y direction.|X\_test.txt & X\_train.txt.|
+tBodyAcc\_z\_std|Numeric|The average on tBodyAcc-std()-Z for the subject and activity.  tBodyAcc-std()-Z stands for standard deviation of Body Acceleration in Z direction.|X\_test.txt & X\_train.txt.|
 tGravityAcc\_x\_std|Numeric||
 tGravityAcc\_y\_std|Numeric||
 tGravityAcc\_z\_std|Numeric||
