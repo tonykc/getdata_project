@@ -41,8 +41,11 @@ The requirements on run_analysis.R for preparing the target tidy data set includ
 In order to satisfy (2), we need to determine which variables listed in features.txt have to be included.  The file features_info.txt was studied.  The following statements were found in it:
 
 ... The set of variables that were estimated from these signals are:
+
 mean(): Mean value
+
 std(): Standard deviation
+
 ...
 
 Based on this, it was decided that only those "features/variables" which looked like "...mean()..." or "...std()..." would be included.
