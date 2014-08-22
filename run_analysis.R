@@ -59,8 +59,10 @@ data_activity <- rbind (
 # variables$var: 
 #   "Modified" variable names: omit the "()", change "-" to "_".
 #   Also, put "mean" and "std" at the end, so that "functions" being
-#   applied to the measurements are always started at the end of 
+#   applied to the measurements are always stated at the end of 
 #   the variable name.
+#   Change "fBodyBody" to "fBody" to fix some incorrect entries 
+#   found in features.txt.
 #
 variables <- read.table (
   "features.txt", header=FALSE, sep=" ", col.names = c("index", "var_org"))
@@ -77,6 +79,7 @@ variables$var <- gsub ("-std\\(\\)-Y", "_y_std", variables$var)
 variables$var <- gsub ("-std\\(\\)-Z", "_z_std", variables$var)
 variables$var <- gsub ("-mean\\(\\)", "_mean", variables$var)
 variables$var <- gsub ("-std\\(\\)", "_std", variables$var)
+variables$var <- gsub ("fBodyBody", "fBody", variables$var)
 
 #
 # Extract the required mean and std of measurements by "sapply":
@@ -129,5 +132,8 @@ result <- result [, c(2,69,3:68)]
 #   r <- read.table ("result.txt", header=TRUE)
 #
 write.table (result, file="result.txt", row.name=FALSE)
+
+
+
 
 
