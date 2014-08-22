@@ -70,6 +70,8 @@ variables <- rbind (
   variables [grep ("mean\\(\\)", variables$var_org),], 
   variables [grep ("std\\(\\)", variables$var_org),]
 )
+# Order by index
+variables <- variables [order (variables$index), ]
 # Using gsub to do the variable names modifications.
 variables$var <- gsub ("-mean\\(\\)-X", "_x_mean", variables$var_org)
 variables$var <- gsub ("-mean\\(\\)-Y", "_y_mean", variables$var)
@@ -132,6 +134,8 @@ result <- result [, c(2,69,3:68)]
 #   r <- read.table ("result.txt", header=TRUE)
 #
 write.table (result, file="result.txt", row.name=FALSE)
+
+
 
 
 
