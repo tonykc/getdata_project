@@ -5,16 +5,16 @@ The list of variables are described below:
 Field|Type|Description
 -----|----|-----------
 subject|Numeric|Identifier for subject who performed the activity for each window sample.  Range from 1 to 30.  Data sourced from subject\_test.txt and subject\_train.txt.
-activity|Character|The activity performed: WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, SITTING, STANDING, LAYING.  Data sourced from y\_test.txt and y\_train.txt with descriptions mapped from activity_labels.txt
+activity|Character|The activity performed by the subject: WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, SITTING, STANDING, LAYING.  Data sourced from y\_test.txt and y\_train.txt with descriptions mapped from activity_labels.txt
 tBodyAcc\_x\_mean|Numeric|The average on tBodyAcc-mean()-X for the subject and activity.  tBodyAcc-mean()-X stands for mean value of Body Acceleration in X direction.  The prefix 't' indicates time domain signals.  Data sourced from X\_test.txt and X\_train.txt.|
-tBodyAcc\_y\_mean|Numeric|The average on tBodyAcc-mean()-Y for the subject and activity.  tBodyAcc-mean()-Y stands for mean value of Body Acceleration in Y direction.  The prefix 't' indicates time domain signals.  Data sourced from X\_test.txt and X\_train.txt.|
-tBodyAcc\_z\_mean|Numeric|The average on tBodyAcc-mean()-Z for the subject and activity.  tBodyAcc-mean()-Z stands for mean value of Body Acceleration in Z direction.  The prefix 't' indicates time domain signals.  Data sourced from X\_test.txt and X\_train.txt.|
-tGravityAcc\_x\_mean|Numeric|The average on tGravityAcc-mean()-X for the subject and activity.  tGravityAcc-mean()-X stands for mean value of Gravity Acceleration in X direction.  The prefix 't' indicates time domain signals.  Data sourced from X\_test.txt and X\_train.txt.|
-tGravityAcc\_y\_mean|Numeric|The average on tGravityAcc-mean()-Y for the subject and activity.  tGravityAcc-mean()-Y stands for mean value of Gravity Acceleration in Y direction.  The prefix 't' indicates time domain signals.  Data sourced from X\_test.txt and X\_train.txt.|
-tGravityAcc\_z\_mean|Numeric|The average on tGravityAcc-mean()-Z for the subject and activity.  tGravityAcc-mean()-Z stands for mean value of Gravity Acceleration in Z direction.  The prefix 't' indicates time domain signals.  Data sourced from X\_test.txt and X\_train.txt.|
-tBodyAccJerk\_x\_mean|Numeric||
-tBodyAccJerk\_y\_mean|Numeric||
-tBodyAccJerk\_z\_mean|Numeric||
+tBodyAcc\_y\_mean|Numeric|The average on tBodyAcc-mean()-Y for the subject and activity.  tBodyAcc-mean()-Y stands for mean value of Body Acceleration in Y direction.  Data sourced from X\_test.txt and X\_train.txt.|
+tBodyAcc\_z\_mean|Numeric|The average on tBodyAcc-mean()-Z for the subject and activity.  tBodyAcc-mean()-Z stands for mean value of Body Acceleration in Z direction.  Data sourced from X\_test.txt and X\_train.txt.|
+tGravityAcc\_x\_mean|Numeric|The average on tGravityAcc-mean()-X for the subject and activity.  tGravityAcc-mean()-X stands for mean value of Gravity Acceleration in X direction.  Data sourced from X\_test.txt and X\_train.txt.|
+tGravityAcc\_y\_mean|Numeric|The average on tGravityAcc-mean()-Y for the subject and activity.  tGravityAcc-mean()-Y stands for mean value of Gravity Acceleration in Y direction.  Data sourced from X\_test.txt and X\_train.txt.|
+tGravityAcc\_z\_mean|Numeric|The average on tGravityAcc-mean()-Z for the subject and activity.  tGravityAcc-mean()-Z stands for mean value of Gravity Acceleration in Z direction.  Data sourced from X\_test.txt and X\_train.txt.|
+tBodyAccJerk\_x\_mean|Numeric|The average on tBodyAccJerk-mean()-X for the subject and activity.  tBodyAccJerk-mean()-X stands for mean value of Body Acceleration Jerk in X direction.  Data sourced from X\_test.txt and X\_train.txt.|
+tBodyAccJerk\_y\_mean|Numeric|The average on tBodyAccJerk-mean()-Y for the subject and activity.  tBodyAccJerk-mean()-Y stands for mean value of Body Acceleration Jerk in Y direction.  Data sourced from X\_test.txt and X\_train.txt.|
+tBodyAccJerk\_z\_mean|Numeric|The average on tBodyAccJerk-mean()-Z for the subject and activity.  tBodyAccJerk-mean()-Z stands for mean value of Body Acceleration Jerk in Z direction.  Data sourced from X\_test.txt and X\_train.txt.|
 tBodyGyro\_x\_mean|Numeric||
 tBodyGyro\_y\_mean|Numeric||
 tBodyGyro\_z\_mean|Numeric||
