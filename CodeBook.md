@@ -58,9 +58,9 @@ Seq|Field|Type|Description|Data Source
 52|fBodyAccJerk\_x\_std|Numeric|The average on fBodyAccJerk-std()-X for the subject and activity.  fBodyAccJerk-std()-X stands for standard deviation of frequency domain signals of jerk derived from body acceleration in X direction.|X\_test.txt & X\_train.txt.|
 53|fBodyAccJerk\_y\_std|Numeric|The average on fBodyAccJerk-std()-Y for the subject and activity.  fBodyAccJerk-std()-Y stands for standard deviation of frequency domain signals of jerk derived from body acceleration in Y direction.|X\_test.txt & X\_train.txt.|
 54|fBodyAccJerk\_z\_std|Numeric|The average on fBodyAccJerk-std()-Z for the subject and activity.  fBodyAccJerk-std()-Z stands for standard deviation of frequency domain signals of jerk derived from body acceleration in Z direction.|X\_test.txt & X\_train.txt.|
-55|fBodyGyro\_x\_mean|Numeric||
-56|fBodyGyro\_y\_mean|Numeric||
-57|fBodyGyro\_z\_mean|Numeric||
+55|fBodyGyro\_x\_mean|Numeric|The average on fBodyGyro-mean()-X for the subject and activity.  fBodyGyro-mean()-X stands for mean value of frequency domain signals of body angular velocity in X direction.|X\_test.txt & X\_train.txt.|
+56|fBodyGyro\_y\_mean|Numeric|The average on fBodyGyro-mean()-Y for the subject and activity.  fBodyGyro-mean()-Y stands for mean value of frequency domain signals of body angular velocity in Y direction.|X\_test.txt & X\_train.txt.|
+57|fBodyGyro\_z\_mean|Numeric|The average on fBodyGyro-mean()-Z for the subject and activity.  fBodyGyro-mean()-Z stands for mean value of frequency domain signals of body angular velocity in Z direction.|X\_test.txt & X\_train.txt.|
 58|fBodyGyro\_x\_std|Numeric||
 59|fBodyGyro\_y\_std|Numeric||
 60|fBodyGyro\_z\_std|Numeric||
