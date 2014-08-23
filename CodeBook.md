@@ -1,4 +1,4 @@
-The variables in the tidy data set "result.txt" are separated by space.  
+The variables in the tidy data set "result.txt" are separated by space.  As this is the summary on average values on different measurements by subject and activity, the "unique" key of this table is "subject + activity". 
 
 The list of variables are described below:
 
