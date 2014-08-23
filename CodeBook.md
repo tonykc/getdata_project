@@ -49,12 +49,12 @@ Seq|Field|Type|Description|Data Source
 43|fBodyAcc\_x\_mean|Numeric|The average on fBodyAcc-mean()-X for the subject and activity.  fBodyAcc-mean()-X stands for mean value of frequency domain signals of Body Acceleration in X direction.|X\_test.txt & X\_train.txt.|
 44|fBodyAcc\_y\_mean|Numeric|The average on fBodyAcc-mean()-Y for the subject and activity.  fBodyAcc-mean()-Y stands for mean value of frequency domain signals of Body Acceleration in Y direction.|X\_test.txt & X\_train.txt.|
 45|fBodyAcc\_z\_mean|Numeric|The average on fBodyAcc-mean()-Z for the subject and activity.  fBodyAcc-mean()-Z stands for mean value of frequency domain signals of Body Acceleration in Z direction.|X\_test.txt & X\_train.txt.|
-46|fBodyAcc\_x\_std|Numeric|The average on fBodyAcc-std()-X for the subject and activity.  fBodyAcc-std()-X stands for standard deviation of frequency domain signals of Body Acceleration in X direction.|X\_test.txt & X\_train.txt.|
-47|fBodyAcc\_y\_std|Numeric|The average on fBodyAcc-std()-Y for the subject and activity.  fBodyAcc-std()-Y stands for standard deviation of frequency domain signals of Body Acceleration in Y direction.|X\_test.txt & X\_train.txt.|
-48|fBodyAcc\_z\_std|Numeric|The average on fBodyAcc-std()-Z for the subject and activity.  fBodyAcc-std()-Z stands for standard deviation of frequency domain signals of Body Acceleration in Z direction.|X\_test.txt & X\_train.txt.|
-49|fBodyAccJerk\_x\_mean|Numeric||
-50|fBodyAccJerk\_y\_mean|Numeric||
-51|fBodyAccJerk\_z\_mean|Numeric||
+46|fBodyAcc\_x\_std|Numeric|The average on fBodyAcc-std()-X for the subject and activity.  fBodyAcc-std()-X stands for standard deviation of frequency domain signals of body acceleration in X direction.|X\_test.txt & X\_train.txt.|
+47|fBodyAcc\_y\_std|Numeric|The average on fBodyAcc-std()-Y for the subject and activity.  fBodyAcc-std()-Y stands for standard deviation of frequency domain signals of body acceleration in Y direction.|X\_test.txt & X\_train.txt.|
+48|fBodyAcc\_z\_std|Numeric|The average on fBodyAcc-std()-Z for the subject and activity.  fBodyAcc-std()-Z stands for standard deviation of frequency domain signals of body acceleration in Z direction.|X\_test.txt & X\_train.txt.|
+49|fBodyAccJerk\_x\_mean|Numeric|The average on fBodyAccJerk-mean()-X for the subject and activity.  fBodyAccJerk-mean()-X stands for mean value of frequency domain signals of jerk derived from body acceleration in X direction.|X\_test.txt & X\_train.txt.|
+50|fBodyAccJerk\_y\_mean|Numeric|The average on fBodyAccJerk-mean()-Y for the subject and activity.  fBodyAccJerk-mean()-Y stands for mean value of frequency domain signals of jerk derived from body acceleration in Y direction.|X\_test.txt & X\_train.txt.|
+51|fBodyAccJerk\_z\_mean|Numeric|The average on fBodyAccJerk-mean()-Z for the subject and activity.  fBodyAccJerk-mean()-Z stands for mean value of frequency domain signals of jerk derived from body acceleration in Z direction.|X\_test.txt & X\_train.txt.|
 52|fBodyAccJerk\_x\_std|Numeric||
 53|fBodyAccJerk\_y\_std|Numeric||
 54|fBodyAccJerk\_z\_std|Numeric||
