@@ -64,10 +64,10 @@ Seq|Field|Type|Description|Data Source
 58|fBodyGyro\_x\_std|Numeric|The average on fBodyGyro-std()-X for the subject and activity.  fBodyGyro-std()-X stands for standard deviation of frequency domain signals of body angular velocity in X direction.|X\_test.txt & X\_train.txt.|
 59|fBodyGyro\_y\_std|Numeric|The average on fBodyGyro-std()-Y for the subject and activity.  fBodyGyro-std()-Y stands for standard deviation of frequency domain signals of body angular velocity in Y direction.|X\_test.txt & X\_train.txt.|
 60|fBodyGyro\_z\_std|Numeric|The average on fBodyGyro-std()-Z for the subject and activity.  fBodyGyro-std()-Z stands for standard deviation of frequency domain signals of body angular velocity in Z direction.|X\_test.txt & X\_train.txt.|
-61|fBodyAccMag\_mean|Numeric|The average on fBodyAccMag-mean()-X for the subject and activity.  fBodyAccMag-mean()-X stands for mean value of frequency domain signals of magnitude of body acceleration in X direction.|X\_test.txt & X\_train.txt.|
-62|fBodyAccMag\_std|Numeric|The average on fBodyAccMag-std()-X for the subject and activity.  fBodyAccMag-std()-X stands for standard deviation of frequency domain signals of magnitude of body acceleration in X direction.|X\_test.txt & X\_train.txt.|
-63|fBodyAccJerkMag\_mean|Numeric||
-64|fBodyAccJerkMag\_std|Numeric||
+61|fBodyAccMag\_mean|Numeric|The average on fBodyAccMag-mean() for the subject and activity.  fBodyAccMag-mean() stands for mean value of frequency domain signals of magnitude of body acceleration.|X\_test.txt & X\_train.txt.|
+62|fBodyAccMag\_std|Numeric|The average on fBodyAccMag-std() for the subject and activity.  fBodyAccMag-std() stands for standard deviation of frequency domain signals of magnitude of body acceleration.|X\_test.txt & X\_train.txt.|
+63|fBodyAccJerkMag\_mean|Numeric|The average on fBodyAccJerkMag-mean() for the subject and activity.  fBodyAccJerkMag-mean() stands for mean value of frequency domain signals of magnitude of jerk derived from body acceleration.|X\_test.txt & X\_train.txt.|
+64|fBodyAccJerkMag\_std|Numeric|The average on fBodyAccJerkMag-std() for the subject and activity.  fBodyAccJerkMag-std() stands for standard deviation of frequency domain signals of magnitude of jerk derived from body acceleration.|X\_test.txt & X\_train.txt.|
 65|fBodyGyroMag\_mean|Numeric||
 66|fBodyGyroMag\_std|Numeric||
 67|fBodyGyroJerkMag\_mean|Numeric||
